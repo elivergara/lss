@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Chapter 1 — What is Lean Six Sigma?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+:root {
+--primary:#007BC1;
+--secondary:#583F98;
+--accent:#F37021;
+--highlight:#FBAF33;
+--text:#6E6E6E;
+}
+
+body{
+color:var(--text);
+background:#f3f3fa;
+}
+
+.navbar-gradient{
+background:linear-gradient(90deg,#007BC1 0%,#583F98 100%)!important;
+}
+
+.navbar-nav .nav-link{
+color:#e5e5fa!important;
+font-weight:500;
+}
+
+.navbar-nav .nav-link:hover{
+color:var(--highlight)!important;
+}
+
+.brand{
+display:inline-flex;
+align-items:center;
+gap:.3rem;
+font-weight:800;
+letter-spacing:1px;
+text-transform:uppercase;
+color:#fff;
+}
+
+.brand-icon{
+width:20px;
+height:20px;
+fill:var(--highlight);
+}
+
+.hero{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;
+padding:90px 20px 60px;
+}
+
+.chapter-content{
+background:white;
+border-radius:16px;
+padding:40px;
+box-shadow:0 4px 16px rgba(44,55,130,0.09);
+}
+
+.chapter-content h2{
+color:var(--secondary);
+font-weight:700;
+margin-top:30px;
+}
+
+.chapter-content h3{
+color:var(--primary);
+margin-top:25px;
+}
+
+.chapter-nav{
+margin-top:40px;
+display:flex;
+justify-content:space-between;
+}
+
+.btn-course{
+background:var(--accent);
+border:none;
+color:white;
+}
+
+.btn-course:hover{
+background:var(--secondary);
+}
+
+#backToTopBtn{
+position:fixed;
+bottom:40px;
+right:36px;
+z-index:1100;
+display:none;
+background:var(--secondary);
+color:#fff;
+border:none;
+border-radius:60px;
+padding:16px 18px;
+font-size:1.2rem;
+}
+
+html{scroll-behavior:smooth;}
+</style>
+
+<script>
+window.addEventListener('scroll',function(){
+document.getElementById('backToTopBtn').style.display =
+(window.scrollY>300)?'inline-block':'none';
+});
+
+function backToTop(){
+window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gradient shadow-sm fixed-top">
+<div class="container-fluid">
+
+<a class="navbar-brand brand" href="index.html">
+
+<svg class="brand-icon" viewBox="0 0 24 24">
+<path d="M3 12l6-9 6 9-6 9-6-9z" opacity=".25"/>
+<path d="M12 3l7 6-7 6-7-6 7-6z"/>
+</svg>
+
+Lean Six Sigma
+
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="mainNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html#chapters">
+<i class="fa-solid fa-graduation-cap"></i> Chapters
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="index.html#about-section">
+<i class="fa-solid fa-circle-info"></i> About
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<button id="backToTopBtn" onclick="backToTop()">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- HERO -->
+
+<header class="hero text-center">
+
+<div class="container">
+
+<h1 class="display-5 fw-bold">
+<i class="fa-solid fa-project-diagram"></i>
+Chapter 1 — What is Lean Six Sigma?
+</h1>
+
+<p class="lead">
+Explore the origins of Lean and Six Sigma and learn how their combined power drives operational excellence.
+</p>
+
+</div>
+
+</header>
+
+<!-- MAIN CONTENT -->
+
+<div class="container my-5" style="max-width:900px">
+
+<div class="chapter-content">
+
+<!-- ====================================================== -->
+<!-- YOUTUBE VIDEO (OPTIONAL) -->
+<!-- Uncomment if you want to embed a video -->
+<!--
+
+<div class="ratio ratio-16x9 mb-4">
+<iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+title="Lean Six Sigma Introduction"
+allowfullscreen></iframe>
+</div>
+
+-->
+
+<!-- ====================================================== -->
+<!-- CHAPTER TEXT START -->
+
+<h2>Introduction</h2>
+
+<p>
+Modern organizations face constant pressure to deliver better results with fewer resources. 
+In healthcare, this challenge is especially critical: delays, inefficiencies, and errors can directly impact patient outcomes.
+
+<p>Lean Six Sigma is a disciplined approach to improving processes by reducing waste, minimizing variation, and focusing on what truly matters to the customer.
+
+At its core, Lean Six Sigma combines two powerful methodologies:
+
+<ul><li>Lean, which focuses on eliminating waste and improving speed.</ul>
+
+<ul><li>Six Sigma, which focuses on reducing errors and process variation.</ul>
+
+Together, these approaches help organizations deliver better quality, faster service, and lower costs, creating a culture of continuous improvement.
+</p>
+
+<h2>The Origins of Lean</h2>
+
+<p>
+Lean thinking emerged from manufacturing, particularly from the Toyota Production System (TPS) developed after World War II.
+<p>Toyota engineers realized that traditional mass production created large amounts of waste: excess inventory, long delays, and unnecessary steps.
+<p>Instead of focusing on producing as much as possible, Toyota focused on producing exactly what the customer needed, when it was needed, with minimal waste.
+<p>Lean identifies eight common forms of waste, often remembered by the acronym DOWNTIME:
+
+<table class="table table-striped table-bordered">
+  <thead class="table-light">
+    <tr>
+      <th>Waste</th>
+      <th>Example in Healthcare</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>D</b>efects</td>
+      <td>Medication errors</td>
+    </tr>
+    <tr>
+      <td><b>O</b>verproduction</td>
+      <td>Printing unnecessary reports</td>
+    </tr>
+    <tr>
+      <td><b>W</b>aiting</td>
+      <td>Patients waiting for lab results</td>
+    </tr>
+    <tr>
+      <td><b>N</b>on-utilized talent</td>
+      <td>Staff not involved in improvement decisions</td>
+    </tr>
+    <tr>
+      <td><b>T</b>ransportation</td>
+      <td>Moving patients between departments unnecessarily</td>
+    </tr>
+    <tr>
+      <td><b>I</b>nventory</td>
+      <td>Overstocked medical supplies</td>
+    </tr>
+    <tr>
+      <td><b>M</b>otion</td>
+      <td>Staff walking long distances for equipment</td>
+    </tr>
+    <tr>
+      <td><b>E</b>xtra processing</td>
+      <td>Duplicate documentation</td>
+    </tr>
+  </tbody>
+</table>
+
+Lean teaches organizations to <b>see waste clearly and systematically remove it</b>.
+</p>
+
+<h2>The Origins of Six Sigma</h2>
+
+<p>
+[Explain Motorola, statistical quality control, and reduction of defects.]
+</p>
+
+<h2>The Power of Combining Lean and Six Sigma</h2>
+
+<p>
+[Explain why speed + quality together produce powerful improvements.]
+</p>
+
+<h2>The DMAIC Framework</h2>
+
+<p>
+[Introduce Define, Measure, Analyze, Improve, Control.]
+</p>
+
+<h2>Belt Roles in Lean Six Sigma</h2>
+
+<p>
+[Explain Yellow, Green, and Black Belt roles.]
+</p>
+
+<!-- CHAPTER TEXT END -->
+<!-- ====================================================== -->
+
+<div class="chapter-nav">
+
+<a href="index.html" class="btn btn-course">
+<i class="fa-solid fa-arrow-left"></i> Course Home
+</a>
+
+<a href="chapter2.html" class="btn btn-course">
+Next Chapter <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="text-center text-muted mt-5 mb-3 small">
+
+© 2026 — Lean Six Sigma Yellow Belt
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
