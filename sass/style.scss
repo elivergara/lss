@@ -54,11 +54,11 @@ body { color: var(--text); background: #f3f3fa; }
 
 footer { background: #fbfbfe; border-top: 2px solid var(--accent); }
 
-#chapters-nav { background: #fff; border-radius: 1rem; margin-bottom: 2em; box-shadow: 0 2px 16px rgba(44,55,130,0.05); padding: 10px 24px; text-align: center; }
+#chapters-nav { background: #ffffff00; border-radius: 1rem; margin-bottom: 2em; box-shadow: 0 2px 16px rgba(44, 55, 130, 0); padding: 10px 24px; text-align: center; }
 
-#chapters-nav .btn { margin: 2px 8px; font-weight: 700; letter-spacing: .03em; font-size: 1.05rem; background: var(--primary); border: none; color: #fff; padding: 6px 18px; border-radius: 24px; transition: background 0.1s, color 0.1s; }
+#chapters-nav .btn { margin: 2px 2px; font-weight: 700; letter-spacing: .03em; font-size: 1.05rem; background: var(--primary); border: none; color: #fff; padding: 6px 18px; border-radius: 24px; transition: background 0.1s, color 0.1s; }
 
-#chapters-nav .btn:hover { background: var(--accent); color: #fff; }
+#chapters-nav .btn:hover { background: var(--accent); color: #ffffff; }
 
 @media (max-width: 600px) { 
   #chapters-nav { padding: 6px 2vw; font-size: 0.93rem;} 
