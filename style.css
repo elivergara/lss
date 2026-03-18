@@ -1,0 +1,50 @@
+/* Global Lean Six Sigma course stylesheet — migrated from inline styles */
+:root {
+  --primary: #007BC1;
+  --secondary: #583F98;
+  --accent: #F37021;
+  --highlight: #FBAF33;
+  --highlight2: #f6933d;
+  --text: #6E6E6E;
+}
+body { color: var(--text); background: #f3f3fa; }
+.navbar-gradient { background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%) !important; }
+.navbar, .navbar-dark.bg-dark { background: var(--secondary)!important; border-bottom: none; }
+.navbar-brand { color: #fff!important; }
+.brand { display:inline-flex; align-items:center; gap:.3rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; }
+.brand-icon{ width:20px; height:20px; fill: var(--highlight); }
+.navbar-nav .nav-link { color: #e5e5fa!important; font-weight:500; }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover { color: var(--highlight) !important; }
+.toc-card{ border-radius: 16px; box-shadow: 0 4px 16px rgba(44,55,130,0.09); border: none; }
+.chapter-image { width:100%; height:120px; display:block; border-radius:8px; object-fit:cover; border-bottom: 3px solid var(--highlight); }
+.chapter { scroll-margin-top: 90px; }
+.card-title { font-weight:700; color: var(--secondary); }
+.chapter .card-title { display: flex; align-items:center; gap:.6em; }
+.main-content {background:#f3f3fa; min-height:96vh; padding-bottom:42px;}
+.btn, .btn-lg, .btn-outline-primary { background: var(--accent); border: none; color: #fff; }
+.btn-outline-primary { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+.btn-outline-primary:hover { background: var(--primary); color: #fff; }
+.chapter .fa-solid { color: var(--accent); }
+.card-footer { background: var(--highlight)!important; color:#222; }
+footer { background: #fbfbfe; border-top: 2px solid var(--accent); }
+#chapters-nav { background: #fff; border-radius: 1rem; margin-bottom: 2em; box-shadow: 0 2px 16px rgba(44,55,130,0.05); padding: 10px 24px; text-align: center; }
+#chapters-nav .btn { margin: 2px 8px; font-weight: 700; letter-spacing: .03em; font-size: 1.05rem; background: var(--primary); border: none; color: #fff; padding: 6px 18px; border-radius: 24px; transition: background 0.1s, color 0.1s; }
+#chapters-nav .btn:hover { background: var(--accent); color: #fff; }
+@media (max-width: 600px) { #chapters-nav { padding: 6px 2vw; font-size: 0.93rem;} #chapters-nav .btn { font-size: .94rem; margin:2px 2px; padding:4px 10px;}}
+#backToTopBtn { position: fixed; bottom: 40px; right: 36px; z-index: 1100; display: none; background: var(--secondary); color: #fff; border: none; border-radius: 60px; padding: 18px 20px 16px 20px; font-size: 1.4rem; box-shadow: 0 4px 12px rgba(88,63,152,0.22); transition: background 0.2s, color 0.2s; }
+#backToTopBtn:hover { background: var(--accent); color: #fff; }
+html{scroll-behavior:smooth;}
+
+/* Chapter-specific styling for main content structure */
+.chapter-content {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(44,55,130,0.09);
+}
+.chapter-content h2{ color:var(--secondary); font-weight:700; margin-top:30px; }
+.chapter-content h3{ color:var(--primary); margin-top:25px; }
+.chapter-nav { margin-top:40px; display:flex; justify-content:space-between; }
+.btn-course { background:var(--accent); border:none; color:white; }
+.btn-course:hover { background:var(--secondary); }
+.table thead th, .table-striped tbody tr:nth-of-type(odd) { background: #f3f3fa; }

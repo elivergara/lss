@@ -8,105 +8,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-<style>
-:root {
---primary:#007BC1;
---secondary:#583F98;
---accent:#F37021;
---highlight:#FBAF33;
---text:#6E6E6E;
-}
-
-body{
-color:var(--text);
-background:#f3f3fa;
-}
-
-.navbar-gradient{
-background:linear-gradient(90deg,#007BC1 0%,#583F98 100%)!important;
-}
-
-.navbar-nav .nav-link{
-color:#e5e5fa!important;
-font-weight:500;
-}
-
-.navbar-nav .nav-link:hover{
-color:var(--highlight)!important;
-}
-
-.brand{
-display:inline-flex;
-align-items:center;
-gap:.3rem;
-font-weight:800;
-letter-spacing:1px;
-text-transform:uppercase;
-color:#fff;
-}
-
-.brand-icon{
-width:20px;
-height:20px;
-fill:var(--highlight);
-}
-
-.hero{
-background:linear-gradient(135deg,var(--primary),var(--secondary));
-color:white;
-padding:90px 20px 60px;
-}
-
-.chapter-content{
-background:white;
-border-radius:16px;
-padding:40px;
-box-shadow:0 4px 16px rgba(44,55,130,0.09);
-}
-
-.chapter-content h2{
-color:var(--secondary);
-font-weight:700;
-margin-top:30px;
-}
-
-.chapter-content h3{
-color:var(--primary);
-margin-top:25px;
-}
-
-.chapter-nav{
-margin-top:40px;
-display:flex;
-justify-content:space-between;
-}
-
-.btn-course{
-background:var(--accent);
-border:none;
-color:white;
-}
-
-.btn-course:hover{
-background:var(--secondary);
-}
-
-#backToTopBtn{
-position:fixed;
-bottom:40px;
-right:36px;
-z-index:1100;
-display:none;
-background:var(--secondary);
-color:#fff;
-border:none;
-border-radius:60px;
-padding:16px 18px;
-font-size:1.2rem;
-}
-
-html{scroll-behavior:smooth;}
-</style>
+<link href="style.css" rel="stylesheet">
 
 <script>
 window.addEventListener('scroll',function(){
@@ -191,170 +93,142 @@ Explore the origins of Lean and Six Sigma and learn how their combined power dri
 <!-- MAIN CONTENT -->
 
 <div class="container my-5" style="max-width:900px">
-
-<div class="chapter-content">
-
-<!-- ====================================================== -->
-<!-- YOUTUBE VIDEO (OPTIONAL) -->
-<!-- Uncomment if you want to embed a video -->
-
-
-<div class="ratio ratio-16x9 mb-4">
-<iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-title="Lean Six Sigma Introduction"
-allowfullscreen></iframe>
+  <div class="chapter-content">
+    <div class="ratio ratio-16x9 mb-4">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Lean Six Sigma Introduction" allowfullscreen></iframe>
+    </div>
+    <section class="chapter-section intro">
+      <h2>Introduction</h2>
+      <div class="section-body">
+        <div class="section-paragraph">
+          Modern organizations face constant pressure to deliver better results with fewer resources. In healthcare, for example, this challenge is especially critical: delays, inefficiencies, and errors can directly impact patient outcomes.
+        </div>
+        <div class="section-paragraph">
+          Lean Six Sigma is a disciplined approach to improving processes by <b>reducing waste, minimizing variation, and focusing on what truly matters to the customer</b>.
+        </div>
+        <div class="section-paragraph">
+          At its core, Lean Six Sigma combines two powerful methodologies:
+          <ul>
+            <li>Lean, which focuses on eliminating waste and improving speed.</li>
+            <li>Six Sigma, which focuses on reducing errors and process variation.</li>
+          </ul>
+          Together, these approaches help organizations deliver better quality, faster service, and lower costs, creating a culture of continuous improvement.
+        </div>
+      </div>
+    </section>
+    <section class="chapter-section origins-lean">
+      <h2>The Origins of Lean</h2>
+      <div class="section-body">
+        <div class="section-paragraph">
+          Lean thinking emerged from manufacturing, particularly from the Toyota Production System (TPS) developed after World War II.
+        </div>
+        <div class="section-paragraph">
+          Toyota engineers realized that traditional mass production created large amounts of waste: excess inventory, long delays, and unnecessary steps. Instead of focusing on producing as much as possible, Toyota focused on producing exactly what the customer needed, when it was needed, with minimal waste.
+        </div>
+        <div class="section-paragraph">
+          Lean identifies eight common forms of waste, often remembered by the acronym DOWNTIME:
+        </div>
+        <div class="section-table">
+          <table class="table table-striped table-bordered">
+            <thead class="table-light">
+              <tr><th>Waste</th><th>Example in Healthcare</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><b>D</b>efects</td><td>Medication errors</td></tr>
+              <tr><td><b>O</b>verproduction</td><td>Printing unnecessary reports</td></tr>
+              <tr><td><b>W</b>aiting</td><td>Patients waiting for lab results</td></tr>
+              <tr><td><b>N</b>on-utilized talent</td><td>Staff not involved in improvement decisions</td></tr>
+              <tr><td><b>T</b>ransportation</td><td>Moving patients between departments unnecessarily</td></tr>
+              <tr><td><b>I</b>nventory</td><td>Overstocked medical supplies</td></tr>
+              <tr><td><b>M</b>otion</td><td>Staff walking long distances for equipment</td></tr>
+              <tr><td><b>E</b>xtra processing</td><td>Duplicate documentation</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section-paragraph">
+          Lean teaches organizations to <b>see waste clearly and systematically remove it</b>.
+        </div>
+        <div class="section-paragraph">
+          Throughout this course, you will learn about the DMAIC framework, which is a structured system used to implement Lean Six Sigma principles in any organization. Since most of my work is in healthcare, I will use that sector for examples throughout the chapters; however, Lean Six Sigma principles apply universally to any industry.
+        </div>
+      </div>
+    </section>
+    <section class="chapter-section origins-sixsigma">
+      <h2>The Origins of Six Sigma</h2>
+      <div class="section-body">
+        <div class="section-paragraph">
+          While Lean focused on speed and waste reduction, Six Sigma emerged from a different challenge: <b>quality problems</b> caused by <b>process variation</b>.
+        </div>
+        <div class="section-paragraph">
+          In the 1980s, engineers at Motorola developed Six Sigma to dramatically reduce defects in manufacturing processes.
+        </div>
+        <blockquote class="blockquote"><p class="mb-0">The term “Six Sigma” refers to a statistical goal: achieving processes that produce fewer than 3.4 defects per million opportunities.</p></blockquote>
+        <div class="section-paragraph">
+          Six Sigma gained global popularity when General Electric adopted it under CEO Jack Welch in the 1990s. GE reported billions of dollars in savings by systematically improving processes.
+        </div>
+        <div class="section-list">
+          Six Sigma focuses on:
+          <ul>
+            <li>Measuring processes with data</li>
+            <li>Identifying root causes of problems</li>
+            <li>Implementing solutions that eliminate variation</li>
+          </ul>
+        </div>
+        <div class="section-paragraph">
+          In simple terms:<br>
+          Lean asks: <i>How do we remove waste?</i><br>
+          Six Sigma asks: <i>How do we reduce errors?</i><br>
+          <b>Lean Six Sigma asks both.</b>
+        </div>
+      </div>
+    </section>
+    <section class="chapter-section why-lss">
+      <h2>Why Lean Six Sigma Matters in Healthcare</h2>
+      <div class="section-body">
+        <div class="section-paragraph">
+          Healthcare systems are complex environments with many moving parts: physicians, nurses, labs, pharmacies, insurance systems, and regulatory requirements. Even small inefficiencies can create large downstream problems. For example:
+        </div>
+        <div class="section-subgroup">
+          <div class="fw-bold mb-1">Without improvement</div>
+          <ul>
+            <li>A patient waits 90 minutes for lab results.</li>
+            <li>Staff repeatedly call the lab for updates.</li>
+            <li>Discharges are delayed.</li>
+            <li>Beds remain occupied longer than necessary.</li>
+          </ul>
+        </div>
+        <div class="section-subgroup">
+          <div class="fw-bold mb-1">With Lean Six Sigma</div>
+          <ul>
+            <li>Lab workflow is streamlined.</li>
+            <li>Specimen tracking improves visibility.</li>
+            <li>Results return faster.</li>
+            <li>Patients move through the system more efficiently.</li>
+          </ul>
+        </div>
+        <div class="section-paragraph">
+          The result is better care, reduced stress on staff, and improved operational performance.
+        </div>
+      </div>
+    </section>
+    <section class="chapter-section dmaic">
+      <h2>The DMAIC Framework</h2>
+      <div class="section-body">
+        <div class="section-paragraph">[Introduce Define, Measure, Analyze, Improve, Control.]</div>
+      </div>
+    </section>
+    <section class="chapter-section belt-roles">
+      <h2>Belt Roles in Lean Six Sigma</h2>
+      <div class="section-body">
+        <div class="section-paragraph">[Explain Yellow, Green, and Black Belt roles.]</div>
+      </div>
+    </section>
+  <div class="chapter-nav">
+    <a href="index.html" class="btn btn-course"><i class="fa-solid fa-arrow-left"></i> Course Home</a>
+    <a href="chapter2.html" class="btn btn-course">Next Chapter <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
 </div>
-
-
-
-<!-- ====================================================== -->
-<!-- CHAPTER TEXT START -->
-
-<h2>Introduction</h2>
-
-<p>
-Modern organizations face constant pressure to deliver better results with fewer resources.  
-In healthcare, for example, this challenge is especially critical: delays, inefficiencies, and errors can directly impact patient outcomes.
-
-<p>Lean Six Sigma is a disciplined approach to improving processes by <b>reducing waste, minimizing variation, and focusing on what truly matters to the customer</b>.
-
-At its core, Lean Six Sigma combines two powerful methodologies:
-
-<ul><li>Lean, which focuses on eliminating waste and improving speed.</ul>
-
-<ul><li>Six Sigma, which focuses on reducing errors and process variation.</ul>
-
-Together, these approaches help organizations deliver better quality, faster service, and lower costs, creating a culture of continuous improvement.
-</p>
-
-<h2>The Origins of Lean</h2>
-
-<p>
-Lean thinking emerged from manufacturing, particularly from the Toyota Production System (TPS) developed after World War II.
-<p>Toyota engineers realized that traditional mass production created large amounts of waste: excess inventory, long delays, and unnecessary steps.
-<p>Instead of focusing on producing as much as possible, Toyota focused on producing exactly what the customer needed, when it was needed, with minimal waste.
-<p>Lean identifies eight common forms of waste, often remembered by the acronym DOWNTIME:
-
-<table class="table table-striped table-bordered">
-  <thead class="table-light">
-    <tr>
-      <th>Waste</th>
-      <th>Example in Healthcare</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>D</b>efects</td>
-      <td>Medication errors</td>
-    </tr>
-    <tr>
-      <td><b>O</b>verproduction</td>
-      <td>Printing unnecessary reports</td>
-    </tr>
-    <tr>
-      <td><b>W</b>aiting</td>
-      <td>Patients waiting for lab results</td>
-    </tr>
-    <tr>
-      <td><b>N</b>on-utilized talent</td>
-      <td>Staff not involved in improvement decisions</td>
-    </tr>
-    <tr>
-      <td><b>T</b>ransportation</td>
-      <td>Moving patients between departments unnecessarily</td>
-    </tr>
-    <tr>
-      <td><b>I</b>nventory</td>
-      <td>Overstocked medical supplies</td>
-    </tr>
-    <tr>
-      <td><b>M</b>otion</td>
-      <td>Staff walking long distances for equipment</td>
-    </tr>
-    <tr>
-      <td><b>E</b>xtra processing</td>
-      <td>Duplicate documentation</td>
-    </tr>
-  </tbody>
-</table>
-
-Lean teaches organizations to <b>see waste clearly and systematically remove it</b>.
-<p>Throughout this course, you will learn about the DMAIC framework, which is a structured 
-    system used to implement Lean Six Sigma principles in any organization. 
-    <p>Since most of my work is in healthcare, I will use that sector for examples throughout the chapters; 
-        however, Lean Six Sigma principles apply universally to any industry.
-</p>
-
-<h2>The Origins of Six Sigma</h2>
-
-<p>While Lean focused on speed and waste reduction, Six Sigma emerged from a different challenge: <b>quality problems</b> caused by <b>process variation</b>.
-
-<p>In the 1980s, engineers at Motorola developed Six Sigma to dramatically reduce defects in manufacturing processes.
-
-<blockquote class="blockquote"><p class="mb-0">The term “Six Sigma” refers to a statistical goal: achieving processes that produce fewer 
-    than 3.4 defects per million opportunities.</blockquote>
-
-Six Sigma gained global popularity when General Electric adopted it under CEO Jack Welch in the 1990s. GE reported billions of 
-dollars in savings by systematically improving processes.
-</p>
-Six Sigma focuses on:
-<ul>
-    <li>Measuring processes with data
-
-    <li>Identifying root causes of problems
-
-    <li>Implementing solutions that eliminate variation
-</ul>
-
-In simple terms:<br>
-
-<p>Lean asks:<br>
-<i>How do we remove waste?</i>
-
-<p>Six Sigma asks: <br>
-<i>How do we reduce errors?</i>
-
-<p><b>Lean Six Sigma asks both.</b>
-<h2>Why Lean Six Sigma Matters in Healthcare</h2>
-
-<p>Healthcare systems are complex environments with many moving parts: physicians, nurses, labs, pharmacies, insurance systems, and regulatory requirements.
-<p>Even small inefficiencies can create large downstream problems.
-<p>For example:
-
-<p><b>Without improvement</b>
-<ul>
-    <li>A patient waits 90 minutes for lab results.
-    <li>Staff repeatedly call the lab for updates.
-    <li>Discharges are delayed.
-    <li>Beds remain occupied longer than necessary.
-</ul>
-        
-
-<p><b>With Lean Six Sigma</b>
-<ul>
-    <li>Lab workflow is streamlined.
-    <li>Specimen tracking improves visibility.
-    <li>Results return faster.
-    <li>Patients move through the system more efficiently.
-    </ul>
-
-The result is better care, reduced stress on staff, and improved operational performance.
-</p>
-
-<h2>The DMAIC Framework</h2>
-
-<p>
-[Introduce Define, Measure, Analyze, Improve, Control.]
-</p>
-
-<h2>Belt Roles in Lean Six Sigma</h2>
-
-<p>
-[Explain Yellow, Green, and Black Belt roles.]
-</p>
-
-<!-- CHAPTER TEXT END -->
-<!-- ====================================================== -->
+</div>
 
 <div class="chapter-nav">
 

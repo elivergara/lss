@@ -6,44 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <style>
-      :root { --primary: #007BC1; --secondary: #583F98; --accent: #F37021; --highlight: #FBAF33; --highlight2: #f6933d; --text: #6E6E6E; }
-      body { color: var(--text); background: #f3f3fa; }
-      .toc-card{ border-radius: 16px; box-shadow: 0 4px 16px rgba(44,55,130,0.09); border: none; }
-      .chapter-image{ width:100%; height:120px; display:block; border-radius:8px; object-fit:cover; }
-      .chapter{ scroll-margin-top: 90px; }
-      .brand { display:inline-flex; align-items:center; gap:.3rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; }
-      .brand-icon{ width:20px; height:20px; fill: var(--highlight); }
-      .navbar-gradient {
-        background: linear-gradient(90deg, #007BC1 0%, #583F98 100%) !important;
-      }
-      .navbar, .navbar-dark.bg-dark {
-        background: #583F98!important;
-        border-bottom: none;
-      }
-      .navbar-brand { color: #fff!important; }
-      .navbar-nav .nav-link { color: #e5e5fa!important; font-weight:500; }
-      .navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
-        color: var(--highlight) !important;
-      }
-      .card-title{ font-weight:700; color: var(--secondary); }
-      .chapter .card-title { display: flex; align-items:center; gap:.6em; }
-      .main-content {background:#f3f3fa; min-height:96vh; padding-bottom:42px;}
-      .btn, .btn-lg, .btn-outline-primary { background: var(--accent); border: none; color: #fff; }
-      .btn-outline-primary { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
-      .btn-outline-primary:hover { background: var(--primary); color: #fff; }
-      .chapter .fa-solid { color: var(--accent); }
-      .chapter-image { border-bottom: 3px solid var(--highlight); }
-      .card-footer { background: var(--highlight)!important; color:#222; }
-      footer { background: #fbfbfe; border-top: 2px solid var(--accent); }
-      #chapters-nav { background: #fff; border-radius: 1rem; margin-bottom: 2em; box-shadow: 0 2px 16px rgba(44,55,130,0.05); padding: 10px 24px; text-align: center; }
-      #chapters-nav .btn { margin: 2px 8px; font-weight: 700; letter-spacing: .03em; font-size: 1.05rem; background: var(--primary); border: none; color: #fff; padding: 6px 18px; border-radius: 24px; transition: background 0.1s, color 0.1s; }
-      #chapters-nav .btn:hover { background: var(--accent); color: #fff; }
-      @media (max-width: 600px) { #chapters-nav { padding: 6px 2vw; font-size: 0.93rem;} #chapters-nav .btn { font-size: .94rem; margin:2px 2px; padding:4px 10px;}}
-      #backToTopBtn { position: fixed; bottom: 40px; right: 36px; z-index: 1100; display: none; background: var(--secondary); color: #fff; border: none; border-radius: 60px; padding: 18px 20px 16px 20px; font-size: 1.4rem; box-shadow: 0 4px 12px rgba(88,63,152,0.22); transition: background 0.2s, color 0.2s; }
-      #backToTopBtn:hover { background: var(--accent); color: #fff; }
-      html{scroll-behavior:smooth;}
-    </style>
+    <link href="style.css" rel="stylesheet">
     <script>window.addEventListener('scroll', function() {document.getElementById('backToTopBtn').style.display = (window.scrollY > 300) ? 'inline-block' : 'none';});function backToTop(){ window.scrollTo({ top: 0, behavior: 'smooth' }); }</script>
   </head>
   <body>
@@ -87,7 +50,7 @@
             <!--CHAPTERS ANCHOR-->
             <section id="chapters"></section>
             <div class="row row-cols-1 row-cols-md-2 g-5" id="chapters-grid">
-<!--CH1--><div class="col"><section id="chapter1"><div class="card h-100 toc-card chapter"><img class="chapter-image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Corporate team in a meeting discussing compliance"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-project-diagram"></i> Chapter 1: What is Lean Six Sigma?</h5><p class="card-text">Explore the roots and fundamentals of Lean Six Sigma. Learn how combining Lean’s efficiency with Six Sigma’s rigor can transform businesses from the inside out.</p><p>Dive into the DMAIC cycle and discover the key roles of Yellow, Green, and Black Belts in process improvement initiatives.</p></div></div></section></div>
+<!--CH1--><div class="col"><section id="chapter1"><div class="card h-100 toc-card chapter"><img class="chapter-image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Corporate team in a meeting discussing compliance"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-project-diagram"></i> <a href="chapter_1.html" style="color:inherit; text-decoration:underline;">Chapter 1: What is Lean Six Sigma?</a></h5><p class="card-text">Explore the roots and fundamentals of Lean Six Sigma. Learn how combining Lean’s efficiency with Six Sigma’s rigor can transform businesses from the inside out.</p><p>Dive into the DMAIC cycle and discover the key roles of Yellow, Green, and Black Belts in process improvement initiatives.</p></div></div></section></div>
 <!--CH2--><div class="col"><section id="chapter2"><div class="card h-100 toc-card chapter"><img class="chapter-image" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80" alt="Defined business plan and team collaboration"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-bullseye"></i> Chapter 2: Define</h5><p class="card-text">Learn to pinpoint improvement opportunities, gather stakeholder voices, and define clear goals. This is where projects start with purpose and focus.</p><p>Well-crafted problem statements and project charters will set the stage for measurable results in later phases.</p></div></div></section></div>
 <!--CH3--><div class="col"><section id="chapter3"><div class="card h-100 toc-card chapter"><img class="chapter-image" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Business analytics dashboard on a computer screen"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-chart-bar"></i> Chapter 3: Measure</h5><p class="card-text">Uncover ways to track current process performance. Learn about data collection, baseline metrics, and visualizing process flow for deeper understanding.</p><p>Establish reliable measurements so solutions can be objectively evaluated later on.</p></div></div></section></div>
 <!--CH4--><div class="col"><section id="chapter4"><div class="card h-100 toc-card chapter"><img class="chapter-image" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80" alt="Team analyzing reports and business strategy charts"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-search"></i> Chapter 4: Analyze</h5><p class="card-text">Explore root cause analysis: Find out why problems exist, not just where. Tools like cause-and-effect diagrams and Pareto charts come to life here.</p><p>Identify the actual sources of inefficiency and variation, paving the way for meaningful solutions.</p></div></div></section></div>
