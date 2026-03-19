@@ -1,0 +1,13 @@
+<div class="alert alert-info" role="alert">
+  <h4 class="alert-heading">Lab Status Update</h4>
+  <p>
+    Please <strong>note</strong>: The patient in Room 302 has been 
+    waiting for <mark>90 minutes</mark>. It is <em>essential</em> 
+    that we follow the <i>Lean Six Sigma</i> protocol for specimen 
+    tracking to avoid further delays.
+  </p>
+  <hr>
+  <p class="mb-0 small text-muted">
+    Last updated: <span class="fw-bold">10:45 AM</span>
+  </p>
+</div>
