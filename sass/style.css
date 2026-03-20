@@ -58,11 +58,11 @@ body {
 
 .chapter-image {
   width: 100%;
-  height: 120px;
+  height: 150px;
   display: block;
   border-radius: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  object-position: top;
   border-bottom: 3px solid var(--highlight);
 }
 
