@@ -4,9 +4,10 @@
   <meta charset="utf-8"/>
   <title>Chapter 5 — Improve</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="sass/style.css" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="sass/style.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient shadow-sm fixed-top">
@@ -25,20 +26,510 @@
     </div>
   </nav>
   <button id="backToTopBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- HERO -->
+
   <header class="hero text-center">
     <div class="container">
-      <h1 class="display-5 fw-bold"><i class="fa-solid fa-lightbulb"></i> Chapter 5 — Improve</h1>
-      <p class="lead">[Placeholder. Add your course content for the Improve phase here.]</p>
+      <h1 class="display-5 fw-bold mt-5">
+        <i class="fa-solid fa-lightbulb mt-5"></i> Chapter 5 — Improve
+      </h1>
+      <p class="lead">The Improve stage is the most impactful stage, because this is where theory meets practice. All the hard work is finally going to be applied to our processes. </p>
     </div>
   </header>
+
+
+ <!-- MAIN CONTENT -->
+
+
+
+
   <div class="container my-5" style="max-width:900px">
     <div class="chapter-content">
+    <div class="ratio ratio-16x9 mb-4">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="The Improve stage" allowfullscreen></iframe>
+    </div>
       <section class="chapter-section">
+
         <h2>Improve</h2>
         <div class="section-body">
-          <div class="placeholder">Your content goes here...</div>
+          <div class="section-paragraph">
+            After identifying the root causes of a problem, the next step is to develop and implement solutions that address those causes directly.
+          </div>
+          <div class="section-paragraph">
+            The Improve phase is where ideas turn into action. Teams test changes, evaluate results, and refine solutions to ensure they produce meaningful improvements.
+          </div>
+          <div class="section-paragraph">
+            Rather than implementing large, risky changes all at once, Lean Six Sigma emphasizes a more practical approach:
+          </div>
+          <div class="section-subgroup">
+            <ol>
+              <li>Start small</li>
+              <li>Test solutions</li>
+              <li>Learn from results</li>
+              <li>Adjust as needed</li>
+            </ol>This approach reduces risk and increases the likelihood of success.
+          </div><br>
+          <div class="section-paragraph">
+            <h4><i class="fa-solid fa-circle-question" style="color: rgb(121, 75, 254);"></i>
+            Key questions in the Improve phase include:</h4>
+          </div>
+          <div class="section-subgroup">
+            <ul>
+              <li>What changes will address the root causes?</li>
+              <li>How can we test solutions safely?</li>
+              <li>Did the changes produce measurable improvement?</li>
+              <li>What adjustments are needed before full implementation?</li>
+            </ul>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Generating Improvement Ideas</div>
+            <div class="section-paragraph">
+              Once root causes are identified, teams begin developing potential solutions.
+            </div>
+            <div class="section-paragraph">
+              This is often done through structured brainstorming, where team members contribute ideas based on their experience and understanding of the process.
+            </div>
+            <div class="section-paragraph">
+              Effective brainstorming:
+            </div>
+            <ul>
+              <li>Encourages all ideas without immediate judgment</li>
+              <li>Focuses on solving root causes, not symptoms</li>
+              <li>Involves people who work directly in the process</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Reducing Lab Specimen Delays</div>
+              <p class="mb-1"><strong>Root Cause Identified:</strong></p>
+              <p class="mb-2">Specimens wait too long before being transported to the laboratory.</p>
+              <p class="mb-1"><strong>Possible solutions:</strong></p>
+              <ul class="mb-0">
+                <li>Increase frequency of specimen transport pickups</li>
+                <li>Implement a scheduled transport system</li>
+                <li>Use pneumatic tube systems where available</li>
+                <li>Assign dedicated staff for specimen transport during peak hours</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              At this stage, the goal is to generate multiple possible solutions, not just one.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Selecting the Best Solutions</div>
+            <div class="section-paragraph">
+              Not all ideas are equally effective or feasible. Teams must evaluate potential solutions based on criteria such as:
+            </div>
+            <ul>
+              <li>Impact on the problem</li>
+              <li>Ease of implementation</li>
+              <li>Cost</li>
+              <li>Time required</li>
+              <li>Risk</li>
+            </ul>
+            <div class="section-paragraph">
+              A simple method is to categorize ideas into:
+            </div>
+            <ul>
+              <li>Quick wins (high impact, easy to implement)</li>
+              <li>Long-term improvements (high impact, more complex)</li>
+              <li>Low-priority items (low impact)</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm mb-3">
+              <div class="fw-bold mb-2">Healthcare Example: Medical Clinic Flow</div>
+              <p class="mb-2">Potential solutions to reduce wait times:</p>
+              <div class="table-responsive mb-0">
+                <table class="table table-striped table-bordered align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Solution</th>
+                      <th>Impact</th>
+                      <th>Effort</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Add one triage nurse during peak hours</td><td>High</td><td>Medium</td></tr>
+                    <tr><td>Redesign registration forms</td><td>Medium</td><td>Low</td></tr>
+                    <tr><td>Build additional treatment rooms</td><td>High</td><td>High</td></tr>
+                  </tbody>
+                </table>
+              </div><br>
+            <div class="section-paragraph">
+              The team may choose to prioritize adding a triage nurse and simplifying registration forms before considering larger infrastructure changes.
+            </div>
+            </div>
+
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Pilot Testing Solutions</div>
+            <div class="section-paragraph">
+              Before implementing changes across the entire process, teams should conduct pilot tests.
+            </div>
+            <div class="section-paragraph">
+              A pilot test involves applying a solution on a small scale to evaluate its effectiveness.
+            </div>
+            <div class="section-paragraph">
+              Benefits of pilot testing:
+            </div>
+            <ul>
+              <li>Reduces risk</li>
+              <li>Identifies unintended consequences</li>
+              <li>Allows refinement before full implementation</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Medication Administration Timing</div>
+              <p class="mb-2">A hospital wants to improve medication timing accuracy.</p>
+              <p class="mb-2">Instead of changing the entire system at once, the team:</p>
+              <ul class="mb-0">
+                <li>Tests a new medication scheduling workflow on one unit</li>
+                <li>Monitors results over two weeks</li>
+                <li>Gathers feedback from nurses and pharmacists</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              The pilot helps determine whether the solution works in practice.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Measuring Improvement</div>
+            <div class="section-paragraph">
+              After implementing a pilot, the team must evaluate whether the solution produced measurable results.
+            </div>
+            <div class="section-paragraph">
+              This involves comparing new performance data to the baseline established in the Measure phase.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Triage Wait Time Improvement</div>
+              <p class="mb-1"><strong>Baseline:</strong></p>
+              <p class="mb-2">Average wait time: 28 minutes</p>
+              <p class="mb-1"><strong>After pilot:</strong></p>
+              <p class="mb-2">Average wait time: 14 minutes</p>
+              <p class="mb-1"><strong>Additional observations:</strong></p>
+              <ul class="mb-0">
+                <li>Reduced patient complaints</li>
+                <li>Improved staff workflow</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              These results indicate that the solution is effective.
+            </div>
+            <div class="section-paragraph">
+              However, teams should also consider:
+            </div>
+            <ul>
+              <li>Did variation decrease?</li>
+              <li>Are results consistent across shifts?</li>
+              <li>Are there any unintended side effects?</li>
+            </ul>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Refining and Adjusting Solutions</div>
+            <div class="section-paragraph">
+              Rarely does a solution work perfectly on the first attempt. The Improve phase includes continuous refinement based on data and feedback.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Specimen Transport Process</div>
+              <p class="mb-1"><strong>Initial solution:</strong></p>
+              <p class="mb-2">Scheduled transport every 60 minutes</p>
+              <p class="mb-1"><strong>Result:</strong></p>
+              <p class="mb-2">Some improvement, but delays still occur during peak hours</p>
+              <p class="mb-1"><strong>Adjustment:</strong></p>
+              <p class="mb-0">Increase transport frequency to every 30 minutes during high-volume periods</p>
+            </div>
+            <div class="section-paragraph mt-3">
+              By refining the solution, the team ensures that improvements are sustainable and effective under real conditions.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Implementing Changes at Scale</div>
+            <div class="section-paragraph">
+              Once a solution has been tested and refined, it can be implemented across the full process.
+            </div>
+            <div class="section-paragraph">
+              This step often requires:
+            </div>
+            <ul>
+              <li>Coordination across departments</li>
+              <li>Staff training</li>
+              <li>Updates to procedures or systems</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Standardizing Discharge Planning</div>
+              <p class="mb-2">After a successful pilot, a hospital implements a new discharge planning protocol across all units.</p>
+              <p class="mb-1"><strong>This includes:</strong></p>
+              <ul class="mb-0">
+                <li>Standard checklists for physicians</li>
+                <li>Early discharge discussions during morning rounds</li>
+                <li>Clear communication with nursing staff</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              Full implementation ensures that improvements benefit the entire organization, not just a small test group.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Error Proofing (Poka-Yoke)</div>
+            <div class="section-paragraph">
+              One of the most powerful ideas in the Improve phase is error proofing, also known as poka-yoke.
+            </div>
+            <div class="section-paragraph">
+              Error proofing is not about telling people to "be more careful." It is about designing processes in a way that makes mistakes difficult, or even impossible, to make in the first place:
+
+              A SIM card has a corner cut at an angle so it only fits one way, an electric plug has one prong larger than the other one for the same reasoon, 
+              or a metal shearing machines that only run when the operator has both hands on sensors to prevent accidents.
+            </div>
+            <div class="h5 fw-bold mt-3 mb-2">What Error Proofing Really Means</div>
+            <div class="section-paragraph">
+              In process improvement, error proofing focuses on two outcomes:
+            </div>
+            <ul>
+              <li>Preventing an error from happening</li>
+              <li>Detecting an error immediately before it causes harm</li>
+            </ul>
+            <div class="section-paragraph">
+              Instead of depending on memory, training, or vigilance, the process itself is designed to guide correct behavior automatically.
+            </div>
+            <div class="section-paragraph">
+              This is especially important in healthcare, where even small mistakes can have serious consequences.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Medication Administration</div>
+              <p class="mb-1">In a traditional process, a nurse may:</p>
+              <ul class="mb-2">
+                <li>Read a medication label</li>
+                <li>Confirm the patient</li>
+                <li>Administer the drug</li>
+              </ul>
+              <p class="mb-2">Even with training and experience, this process relies heavily on human attention, which can be affected by fatigue, interruptions, or workload.</p>
+              <p class="mb-1">Now consider an error-proofed system:</p>
+              <ul class="mb-2">
+                <li>The nurse scans the patient's wristband</li>
+                <li>The medication barcode is scanned</li>
+                <li>The system verifies a match before allowing administration</li>
+              </ul>
+              <p class="mb-0">If there is a mismatch, the system immediately alerts the nurse and prevents the error.</p>
+
+
+    <div class="text-center my-4">
+      <img src="/assets/images/poka-yoke_application.png" class="img-fluid w-90 rounded" alt="Poka-Yoke application" style="max-width: 500px;">
+    </div>
+
+            </div>
+
+            <div class="section-paragraph mt-3">
+              This is not about making the nurse more careful. It is about designing the system so that the mistake cannot easily occur.
+            </div>
+
+            <div class="h5 fw-bold mt-4 mb-2">Why Error Proofing Matters</div>
+            <div class="section-paragraph">
+              Many process improvements focus on training, reminders, or policies. While these are important, they are often less reliable because they depend on consistent human behavior.
+            </div>
+            <div class="section-paragraph">
+              Error proofing, on the other hand:
+            </div>
+            <ul>
+              <li>Reduces reliance on memory</li>
+              <li>Minimizes the impact of distractions</li>
+              <li>Creates consistent outcomes</li>
+              <li>Improves safety and quality</li>
+            </ul>
+            <div class="section-paragraph">
+              In Lean Six Sigma, the strongest solutions are those that change the process itself, not just the people working within it.
+            </div>
+
+            <div class="h5 fw-bold mt-4 mb-2">Simple vs. Advanced Error Proofing</div>
+            <div class="section-paragraph">
+              Error proofing does not always require advanced technology.
+            </div>
+            <div class="section-paragraph">
+              Some of the most effective solutions are simple:
+            </div>
+            <ul>
+              <li>Color-coded labeling systems</li>
+              <li>Standardized forms that prevent missing information</li>
+              <li>Connectors or equipment that only fit one way</li>
+            </ul>
+            <div class="section-paragraph">
+              More advanced solutions may include:
+            </div>
+            <ul>
+              <li>Electronic alerts</li>
+              <li>Automated checks within software systems</li>
+              <li>Barcode scanning and verification</li>
+            </ul>
+            <div class="section-paragraph">
+              Both approaches aim to achieve the same goal: make the correct action the easiest, and often the only, option.
+            </div>
+
+            <div class="h5 fw-bold mt-4 mb-2">Bringing It Back to Improvement</div>
+            <div class="section-paragraph">
+              When teams design solutions during the Improve phase, they should always ask:
+            </div>
+            <div class="section-paragraph">
+              Can this process be redesigned so the error cannot happen?
+            </div>
+            <div class="section-paragraph">
+              If the answer is yes, the improvement is likely to be:
+            </div>
+            <ul>
+              <li>More reliable</li>
+              <li>More sustainable</li>
+              <li>Less dependent on individual performance</li>
+            </ul>
+            <div class="section-paragraph">
+              This is where Lean Six Sigma moves from fixing problems to engineering better systems.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Removing Waste</div>
+            <div class="section-paragraph">
+              The Improve phase also focuses on eliminating waste identified earlier in the process.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Reducing Motion Waste</div>
+              <p class="mb-1"><strong>Problem:</strong></p>
+              <p class="mb-2">Nurses walk long distances to retrieve supplies.</p>
+              <p class="mb-1"><strong>Solution:</strong></p>
+              <ul class="mb-2">
+                <li>Reorganize supply storage closer to patient rooms</li>
+                <li>Standardize supply locations across units</li>
+              </ul>
+              <p class="mb-1"><strong>Result:</strong></p>
+              <ul class="mb-0">
+                <li>Reduced time spent walking</li>
+                <li>Increased time available for patient care</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              Small improvements like these can produce significant cumulative benefits.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Developing an Action Plan</div>
+            <div class="section-paragraph">
+              To ensure successful implementation, teams create a structured action plan.
+            </div>
+            <div class="section-paragraph">
+              An action plan outlines:
+            </div>
+            <ul>
+              <li>What changes will be implemented</li>
+              <li>Who is responsible</li>
+              <li>When tasks will be completed</li>
+              <li>How progress will be monitored</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm mb-3">
+              <div class="fw-bold mb-2">Example Action Plan</div>
+              <div class="table-responsive mb-0">
+                <table class="table table-striped table-bordered align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Task</th>
+                      <th>Responsible</th>
+                      <th>Deadline</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Implement new triage staffing schedule</td><td>Nurse Manager</td><td>May 1</td></tr>
+                    <tr><td>Train staff on updated workflow</td><td>Educator</td><td>May 5</td></tr>
+                    <tr><td>Monitor wait times daily</td><td>Analyst</td><td>Ongoing</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section-paragraph">
+              A clear plan helps maintain momentum and accountability.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Celebrating Improvement</div>
+            <div class="section-paragraph">
+              Improvement efforts require time, energy, and collaboration. Recognizing success is an important part of sustaining engagement.
+            </div>
+            <div class="section-paragraph">
+              Celebration may include:
+            </div>
+            <ul>
+              <li>Sharing results with leadership and staff</li>
+              <li>Highlighting team contributions</li>
+              <li>Communicating improvements to patients</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example</div>
+              <p class="mb-2">A hospital that reduces emergency department wait times may:</p>
+              <ul class="mb-0">
+                <li>Share results in staff meetings</li>
+                <li>Recognize team members involved in the project</li>
+                <li>Display improvement metrics on dashboards</li>
+              </ul>
+      <div class="text-center my-4">
+       <img src="/assets/images/celebration.png" class="img-fluid w-0 rounded" alt="Team celebrating" style="max-width: 700px;">
+     </div>
+
+            </div>
+            <div class="section-paragraph mt-3">
+              Celebrating success reinforces a culture of continuous improvement.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Preparing for the Control Phase</div>
+            <div class="section-paragraph">
+              By the end of the Improve phase, the team should have:
+            </div>
+            <ul>
+              <li>Implemented and tested effective solutions</li>
+              <li>Demonstrated measurable improvement</li>
+              <li>Developed plans for full-scale implementation</li>
+            </ul>
+            <div class="section-paragraph">
+              However, improvement alone is not enough. Without proper controls, processes may gradually return to their previous state.
+            </div>
+            <div class="section-paragraph">
+              The next phase, Control, focuses on sustaining the gains achieved during improvement.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Chapter Summary</div>
+            <div class="section-paragraph">
+              The Improve phase focuses on developing, testing, and implementing solutions that address the root causes of process problems.
+            </div>
+            <div class="section-paragraph">
+              During this stage, teams:
+            </div>
+            <ul>
+              <li>Generate and evaluate improvement ideas</li>
+              <li>Conduct pilot tests to reduce risk</li>
+              <li>Measure results against baseline performance</li>
+              <li>Refine solutions based on data and feedback</li>
+              <li>Implement changes across the organization</li>
+              <li>Apply error-proofing techniques</li>
+              <li>Develop structured action plans</li>
+              <li>Celebrate successful improvements</li>
+            </ul>
+            <div class="section-paragraph">
+              By carefully testing and refining solutions, organizations can achieve meaningful, measurable improvements that enhance quality, efficiency, and patient outcomes.
+            </div>
+            <div class="section-paragraph">
+              The next and final phase of the DMAIC cycle is Control, where these improvements are sustained over time.
+            </div>
+          </div>
         </div>
       </section>
+
+
+
+      
       <div class="chapter-nav">
         <a href="chapter_4.html" class="btn btn-course"><i class="fa-solid fa-arrow-left"></i> Previous Chapter</a>
         <a href="chapter_6.html" class="btn btn-course">Next Chapter <i class="fa-solid fa-arrow-right"></i></a>
