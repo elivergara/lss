@@ -4,9 +4,10 @@
   <meta charset="utf-8"/>
   <title>Chapter 4 — Analyze</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="sass/style.css" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="sass/style.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient shadow-sm fixed-top">
@@ -25,18 +26,374 @@
     </div>
   </nav>
   <button id="backToTopBtn" onclick="backToTop()"><i class="fa-solid fa-arrow-up"></i></button>
-  <header class="hero text-center">
+
+<!-- HERO -->
+
+<header class="hero text-center">
     <div class="container">
-      <h1 class="display-5 fw-bold"><i class="fa-solid fa-search"></i> Chapter 4 — Analyze</h1>
-      <p class="lead">[Placeholder. Add your course content for the Analyze phase here.]</p>
+      <h1 class="display-5 fw-bold mt-5">
+        <i class="fa-solid fa-search mt-5"></i> Chapter 4 — Analyze
+      </h1>
+      <p class="lead">
+        <strong>In the Analyze stage, we shift our focus from measuring the <var>Y</var> (our primary metric) to determine the <var>x</var>s (inputs process controls, etc.) that influence <var>Y.</var></strong></p>
     </div>
   </header>
+
+  <!-- MAIN CONTENT -->
+
+
+
+
   <div class="container my-5" style="max-width:900px">
     <div class="chapter-content">
+          <div class="ratio ratio-16x9 mb-4">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Lean Six Sigma Introduction" allowfullscreen></iframe>
+    </div>
       <section class="chapter-section">
+
         <h2>Analyze</h2>
         <div class="section-body">
-          <div class="placeholder">Your content goes here...</div>
+          <div class="section-paragraph">
+            After defining the problem and measuring current performance, the next step is to understand why the problem exists. The Analyze phase focuses on identifying the root causes of inefficiencies, errors, and variation within a process.
+          </div>
+          <div class="section-paragraph">
+            Many organizations attempt to fix problems by addressing symptoms rather than causes. For example, if patient wait times are too long, leadership might simply add more staff. While this may provide temporary relief, the underlying issues, such as poor workflow design or communication gaps, may still remain.
+          </div>
+          <div class="section-paragraph">
+            The Analyze phase helps teams move beyond assumptions and identify the real drivers behind process problems.
+          </div>
+          <div class="section-paragraph">
+            Key questions addressed during this stage include:
+          </div>
+          <div class="section-subgroup">
+            <ul>
+              <li>Why does the problem occur?</li>
+              <li>What conditions contribute to the issue?</li>
+              <li>Which factors have the greatest impact on performance?</li>
+            </ul>
+          </div>
+          <div class="section-paragraph">
+            By identifying the true sources of inefficiency, teams can focus improvement efforts where they will have the greatest impact.
+          </div>
+
+      <div class="text-center my-4">
+       <img src="/assets/images/brainstorming.png" class="img-fluid w-0 rounded" alt="Team Brainstorming" style="max-width: 700px;">
+     </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Symptoms vs. Root Causes</div>
+            <div class="section-paragraph">
+              One of the most important concepts in the Analyze phase is the distinction between symptoms and root causes.
+            </div>
+            <div class="section-paragraph">
+              A symptom is a visible problem or outcome, while a root cause is the underlying factor that produces that problem.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Delayed Lab Results</div>
+              <p class="mb-2">A facility notices that lab results frequently take longer than expected.</p>
+              <p class="mb-1"><strong>The symptom:</strong></p>
+              <p class="mb-2">Lab results are delayed.</p>
+              <p class="mb-1"><strong>Possible root causes might include:</strong></p>
+              <ul class="mb-0">
+                <li>Specimens waiting too long before transport</li>
+                <li>Staffing shortages during peak hours</li>
+                <li>Incomplete test orders requiring clarification</li>
+                <li>Inefficient specimen logging procedures</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              If the team only addresses the symptom, such as asking technicians to "work faster," the problem may persist. However, identifying the root cause allows the team to design solutions that eliminate the source of the delay.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Root Cause Analysis</div>
+            <div class="section-paragraph">
+              Root cause analysis (RCA) is a structured approach used to identify the fundamental reasons why problems occur.
+            </div>
+            <div class="section-paragraph">
+              Rather than stopping at the first explanation, teams repeatedly ask "why?" until the underlying cause becomes clear.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Medication Administration Delay</div>
+              <p class="mb-2"><strong>Problem:</strong><br>Evening medication doses are often administered late.</p>
+              <p class="mb-2">The team investigates by asking a series of "why" questions.</p>
+              <p class="mb-1"><strong>Why are medications administered late?</strong></p>
+              <p class="mb-2">Nurses often receive medications from the pharmacy later than expected.</p>
+              <p class="mb-1"><strong>Why are medications arriving late from the pharmacy?</strong></p>
+              <p class="mb-2">The pharmacy experiences a surge of orders during evening shift change.</p>
+              <p class="mb-1"><strong>Why do orders surge during shift change?</strong></p>
+              <p class="mb-2">Physicians often complete orders at the end of their rounds.</p>
+              <p class="mb-1"><strong>Why does this create delays?</strong></p>
+              <p class="mb-0">Pharmacy staffing is lower during that period.</p>
+            </div>
+            <div class="section-paragraph mt-3">
+              This analysis reveals that the problem may relate to workflow timing and staffing alignment, rather than individual staff performance.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">The Five Whys Technique</div>
+            <div class="section-paragraph">
+              One of the simplest and most widely used root cause analysis methods is the Five Whys technique.
+            </div>
+            <div class="section-paragraph">
+              The process involves repeatedly asking "why" about a problem until the underlying cause is identified.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Patient Discharge Delays</div>
+              <p class="mb-2"><strong>Problem:</strong><br>Patients who are ready for discharge often remain in their rooms for several additional hours.</p>
+              <p class="mb-1"><strong>Why?</strong></p>
+              <p class="mb-2">Discharge paperwork is not completed quickly.</p>
+              <p class="mb-1"><strong>Why?</strong></p>
+              <p class="mb-2">Physicians often complete documentation later in the day.</p>
+              <p class="mb-1"><strong>Why?</strong></p>
+              <p class="mb-2">Physicians are prioritizing rounds and procedures earlier.</p>
+              <p class="mb-1"><strong>Why?</strong></p>
+              <p class="mb-2">Discharge planning discussions happen late in the process.</p>
+              <p class="mb-1"><strong>Why?</strong></p>
+              <p class="mb-2">Discharge planning is not consistently addressed during morning rounds.</p>
+              <p class="mb-1"><strong>Root Cause:</strong></p>
+              <p class="mb-0">Discharge planning is not integrated into early clinical decision-making.</p>
+            </div>
+            <div class="section-paragraph mt-3">
+              By identifying the root cause, the improvement team can explore solutions such as standardizing discharge planning discussions during morning rounds.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Cause-and-Effect Diagrams</div>
+            <div class="section-paragraph">
+              Another powerful tool used during the Analyze phase is the cause-and-effect diagram, also known as a fishbone diagram or Ishikawa diagram.
+            </div>
+            <div class="section-paragraph">
+              Kaoru Ishikawa popularized this method as a way to organize possible causes of a problem into logical categories.
+            </div>
+            <div class="section-paragraph">
+              A fishbone diagram visually groups potential causes under categories such as:
+              <br>People, Process, Equipment, Materials, Environment, Policies. 
+            </div>
+            
+
+      <div class="text-center my-4">
+       <img src="/assets/images/fishbone_diagram.png" class="img-fluid w-0 rounded" alt="Pareto Diagram" style="max-width: 700px;">
+     </div>
+
+
+
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Emergency Department Wait Times</div>
+              <p class="mb-2">An improvement team investigating long emergency department wait times may identify causes such as:</p>
+              <p class="mb-1"><strong>People</strong></p>
+              <ul class="mb-2">
+                <li>Limited triage staff during peak hours</li>
+                <li>Inconsistent patient prioritization</li>
+              </ul>
+              <p class="mb-1"><strong>Process</strong></p>
+              <ul class="mb-2">
+                <li>Registration procedures take too long</li>
+                <li>Duplicate documentation requirements</li>
+              </ul>
+              <p class="mb-1"><strong>Equipment / Systems</strong></p>
+              <ul class="mb-2">
+                <li>Slow electronic health record login times</li>
+                <li>Limited available treatment rooms</li>
+              </ul>
+              <p class="mb-1"><strong>Environment</strong></p>
+              <ul class="mb-0">
+                <li>High patient arrival volume during evenings</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              By organizing potential causes visually, the team can focus analysis on the most likely contributors to the problem.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Using Pareto Analysis</div>
+            <div class="section-paragraph">
+              Often, many factors contribute to a problem, but a small number of causes account for the majority of the impact.
+            </div>
+            <div class="section-paragraph">
+              This concept is known as the Pareto Principle, sometimes referred to as the 80/20 rule.
+            </div>
+            <div class="section-paragraph">
+              The principle was originally observed by Vilfredo Pareto, who noticed that a small portion of the population controlled a large portion of wealth. In quality improvement, the same pattern often appears in process problems.
+            </div>
+            <div class="section-paragraph">
+              Pareto charts help teams identify which causes contribute the most to a problem.
+            </div>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm mb-3">
+              <div class="fw-bold mb-2">Healthcare Example: Causes of Appointment Delays</div>
+              <p class="mb-2">An outpatient clinic tracks reasons why appointments start late.</p>
+
+      <div class="text-center my-4">
+       <img src="/assets/images/pareto.png" class="img-fluid w-0 rounded" alt="Pareto Diagram" style="max-width: 700px;">
+     </div>
+
+              
+              <div class="table-responsive mb-0">
+                <table class="table table-striped table-bordered align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Cause</th>
+                      <th>Frequency</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Patient arrives late</td><td>40</td></tr>
+                    <tr><td>Room not ready</td><td>28</td></tr>
+                    <tr><td>Provider running behind</td><td>18</td></tr>
+                    <tr><td>Incomplete paperwork</td><td>10</td></tr>
+                    <tr><td>Other</td><td>4</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section-paragraph">
+              When visualized in a Pareto chart, the team may discover that patient arrival and room readiness account for most delays.
+            </div>
+            <div class="section-paragraph">
+              By focusing improvement efforts on these two areas, the clinic can achieve significant improvements with targeted changes.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Identifying Process Bottlenecks</div>
+            <div class="section-paragraph">
+              A bottleneck is a step in a process where work accumulates because it cannot be completed as quickly as it arrives.
+            </div>
+            <div class="section-paragraph">
+              Bottlenecks often create:
+            </div>
+            <ul>
+              <li>Long wait times</li>
+              <li>Work backlogs</li>
+              <li>Increased stress for staff</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm">
+              <div class="fw-bold mb-1">Healthcare Example: Radiology Scheduling</div>
+              <p class="mb-2">A facility analyzes its radiology workflow and discovers that imaging requests are processed quickly until they reach the scheduling step.</p>
+              <p class="mb-2">However, only one scheduler is available during peak hours.</p>
+              <p class="mb-1">As a result:</p>
+              <ul class="mb-0">
+                <li>Requests accumulate in the queue</li>
+                <li>Patients wait longer for imaging appointments</li>
+                <li>Staff repeatedly follow up on scheduling delays</li>
+              </ul>
+            </div>
+            <div class="section-paragraph mt-3">
+              By identifying this bottleneck, the team can explore solutions such as adjusting staffing schedules or redesigning the scheduling process.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Verifying Root Causes with Data</div>
+            <div class="section-paragraph">
+              During the Analyze phase, it is important not only to identify potential causes but also to verify them using data.
+            </div>
+            <div class="section-paragraph">
+              Teams may compare:
+            </div>
+            <ul>
+              <li>Performance across different shifts</li>
+              <li>Differences between departments</li>
+              <li>Changes in performance over time</li>
+            </ul>
+            <div class="p-3 bg-light border-start border-4 border-primary rounded shadow-sm mb-3">
+              <div class="fw-bold mb-2">Healthcare Example: Lab Specimen Transport Delays</div>
+              <p class="mb-2">Suppose the improvement team suspects that specimen transport delays are responsible for slow lab results.</p>
+              <p class="mb-2">They review timestamp data and discover:</p>
+              <div class="table-responsive mb-0">
+                <table class="table table-striped table-bordered align-middle mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Step</th>
+                      <th>Average Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Sample collection to transport</td><td>32 minutes</td></tr>
+                    <tr><td>Transport to lab arrival</td><td>6 minutes</td></tr>
+                    <tr><td>Lab processing</td><td>20 minutes</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="section-paragraph">
+              The data confirms that the largest delay occurs before specimens leave the unit, validating the team's hypothesis.
+            </div>
+            <div class="section-paragraph">
+              This verification ensures that solutions will target the true source of the problem.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2"><i class="fa-solid fa-circle-exclamation" style="color: rgb(255, 59, 59);"></i> Avoiding Common Analysis Mistakes</div>
+            <div class="section-paragraph">
+              The Analyze phase requires careful thinking and disciplined investigation. Teams should avoid several common errors:
+            </div>
+            <div class="section-paragraph">
+              <strong>1. Jumping to Conclusions</strong>
+            </div>
+            <div class="section-paragraph">
+              Teams sometimes identify a cause that seems plausible but fail to verify it with data.
+            </div>
+            <div class="section-paragraph">
+              <strong>2. Blaming Individuals</strong>
+            </div>
+            <div class="section-paragraph">
+              Improvement efforts should focus on process design, not individual performance. Most problems arise from system issues rather than personal mistakes.
+            </div>
+            <div class="section-paragraph">
+              <strong>3. Ignoring Variation</strong>
+            </div>
+            <div class="section-paragraph">
+              Processes may perform differently depending on time of day, staffing levels, or patient volume. Understanding these patterns is critical.
+            </div>
+            <div class="section-paragraph">
+              By approaching analysis objectively, teams can uncover the true drivers of process performance.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Preparing for the Improve Phase</div>
+            <div class="section-paragraph">
+              At the end of the Analyze phase, the team should have a clear understanding of:
+            </div>
+            <ul>
+              <li>The most significant root causes of the problem</li>
+              <li>How those causes affect process performance</li>
+              <li>Which issues should be prioritized for improvement</li>
+            </ul>
+            <div class="section-paragraph">
+              This information allows the team to move forward with confidence into the next stage of the DMAIC cycle: Improve, where targeted solutions are developed and tested.
+            </div>
+          </div>
+
+          <div class="section-subgroup mt-4">
+            <div class="h4 fw-bold mb-2">Chapter Summary</div>
+            <div class="section-paragraph">
+              The Analyze phase focuses on identifying the root causes of process problems.
+            </div>
+            <div class="section-paragraph">
+              During this stage, teams:
+            </div>
+            <ul>
+              <li>Distinguish between symptoms and root causes</li>
+              <li>Conduct root cause analysis</li>
+              <li>Use tools such as the Five Whys and fishbone diagrams</li>
+              <li>Apply Pareto analysis to prioritize issues</li>
+              <li>Identify process bottlenecks</li>
+              <li>Verify suspected causes using data</li>
+            </ul>
+            <div class="section-paragraph">
+              By carefully analyzing the process, teams ensure that improvement efforts focus on the factors that truly drive inefficiency and variation.
+            </div>
+            <div class="section-paragraph">
+              With root causes identified, the team is now ready to develop and implement effective solutions during the Improve phase of the DMAIC cycle.
+            </div>
+          </div>
         </div>
       </section>
       <div class="chapter-nav">
