@@ -7,7 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="sass/style.css" rel="stylesheet">
-    <script>window.addEventListener('scroll', function() {document.getElementById('backToTopBtn').style.display = (window.scrollY > 300) ? 'inline-block' : 'none';});function backToTop(){ window.scrollTo({ top: 0, behavior: 'smooth' }); }</script>
+    <script>
+      window.addEventListener('scroll', function() {
+        document.getElementById('backToTopBtn').style.display = (window.scrollY > 300) ? 'inline-block' : 'none';
+      });
+
+      function backToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient shadow-sm fixed-top" style="z-index:1000;">
@@ -50,59 +61,119 @@
             <!--CHAPTERS ANCHOR-->
             <section id="chapters"></section>
             <div class="row row-cols-1 row-cols-md-2 g-5" id="chapters-grid">
-<!--CH1--><div class="col"><section id="chapter1"><div class="card h-100 toc-card chapter"><img class="chapter-image card-img-top" src="assets/images/chapter1_head.png" alt="What is Lean Six Sigma?"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-project-diagram"></i> <a href="chapter_1.html" style="color:inherit; text-decoration:underline;">Chapter 1: What is Lean Six Sigma?</a></h5><p class="card-text">Explore the roots and fundamentals of Lean Six Sigma. Learn how combining Lean’s efficiency with Six Sigma’s rigor can transform businesses from the inside out.</p><p>Dive into the DMAIC cycle and discover the key roles of Yellow, Green, and Black Belts in process improvement initiatives.</p></div></div></section></div>
-<!--CH2--><div class="col"><section id="chapter2"><div class="card h-100 toc-card chapter"><img class="chapter-image card-img-top" src="assets/images/chapter2_head.png" alt="Defined business plan and team collaboration"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-bullseye"></i> <a href="chapter_2.html" style="color:inherit; text-decoration:underline;">Chapter 2: Define</a></h5><p class="card-text">Learn to pinpoint improvement opportunities, gather stakeholder voices, and define clear goals. This is where projects start with purpose and focus.</p><p>Well-crafted problem statements and project charters will set the stage for measurable results in later phases.</p></div></div></section></div>
-<!--CH3--><div class="col"><section id="chapter3"><div class="card h-100 toc-card chapter"><img class="chapter-image card-img-top" src="assets/images/chapter3_head.png" alt="Business analytics dashboard on a computer screen"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-chart-bar"></i> <a href="chapter_3.html" style="color:inherit; text-decoration:underline;">Chapter 3: Measure</a></h5><p class="card-text">Uncover ways to track current process performance. Learn about data collection, baseline metrics, and visualizing process flow for deeper understanding.</p><p>Establish reliable measurements so solutions can be objectively evaluated later on.</p></div></div></section></div>
-<!--CH4--><div class="col"><section id="chapter4"><div class="card h-100 toc-card chapter"><img class="chapter-image card-img-top" src="assets/images/chapter4_head.png" alt="Team analyzing reports and business strategy charts"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-search"></i> <a href="chapter_4.html" style="color:inherit; text-decoration:underline;">Chapter 4: Analyze</a></h5><p class="card-text">Explore root cause analysis: Find out why problems exist, not just where. Tools like cause-and-effect diagrams and Pareto charts come to life here.</p><p>Identify the actual sources of inefficiency and variation, paving the way for meaningful solutions.</p></div></div></section></div>
-<!--CH5--><div class="col"><section id="chapter5"><div class="card h-100 toc-card chapter"><img class="chapter-image card-img-top" src="assets/images/chapter5_head.png" alt="Team brainstorming in a modern office with sticky notes"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-lightbulb"></i> <a href="chapter_5.html" style="color:inherit; text-decoration:underline;">Chapter 5: Improve</a></h5><p class="card-text">Try, test, and refine practical changes. This is where teams brainstorm solutions, run pilots, and remove sources of waste, both big and small.</p><p>Celebrate breakthrough improvements and lock in the gains through smart action planning.</p></div></div></section></div>
-<!--CH6--><div class="col"><section id="chapter6"><div class="card h-100 toc-card chapter"><img class="chapter-image card-img-top" src="assets/images/chapter6_head.png" alt="Quality control: professional reviewing results in an office"><div class="card-body"><h5 class="card-title"><i class="fa-solid fa-check-circle"></i> <a href="chapter_6.html" style="color:inherit; text-decoration:underline;">Chapter 6: Control</a></h5><p class="card-text">Sustain and scale success. Build control plans and leverage dashboards so your improvements stick long-term, and adapt to future needs.</p><p>From audits to insights, take a proactive stance to prevent backsliding and foster a culture of continuous improvement.</p></div></div></section></div>
+              <!--CH1-->
+              <div class="col">
+                <section id="chapter1">
+                  <div class="card h-100 toc-card chapter">
+                    <img class="chapter-image card-img-top" src="assets/images/chapter1_head.png" alt="What is Lean Six Sigma?">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fa-solid fa-project-diagram"></i> <a href="chapter_1.html" style="color:inherit; text-decoration:underline;">Chapter 1: What is Lean Six Sigma?</a></h5>
+                      <p class="card-text">Explore the roots and fundamentals of Lean Six Sigma. Learn how combining Lean’s efficiency with Six Sigma’s rigor can transform businesses from the inside out.</p>
+                      <p>Dive into the DMAIC cycle and discover the key roles of White, Yellow, Green, and Black Belts in process improvement initiatives.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--CH2-->
+              <div class="col">
+                <section id="chapter2">
+                  <div class="card h-100 toc-card chapter">
+                    <img class="chapter-image card-img-top" src="assets/images/chapter2_head.png" alt="Defined business plan and team collaboration">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fa-solid fa-bullseye"></i> <a href="chapter_2.html" style="color:inherit; text-decoration:underline;">Chapter 2: Define</a></h5>
+                      <p class="card-text">Learn to pinpoint improvement opportunities, gather stakeholder voices, and define clear goals. This is where projects start with purpose and focus.</p>
+                      <p>Well-crafted problem statements and project charters will set the stage for measurable results in later phases.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--CH3-->
+              <div class="col">
+                <section id="chapter3">
+                  <div class="card h-100 toc-card chapter">
+                    <img class="chapter-image card-img-top" src="assets/images/chapter3_head.png" alt="Business analytics dashboard on a computer screen">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fa-solid fa-chart-bar"></i> <a href="chapter_3.html" style="color:inherit; text-decoration:underline;">Chapter 3: Measure</a></h5>
+                      <p class="card-text">Uncover ways to track current process performance. Learn about data collection, baseline metrics, and visualizing process flow for deeper understanding.</p>
+                      <p>Establish reliable measurements so solutions can be objectively evaluated later on.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--CH4-->
+              <div class="col">
+                <section id="chapter4">
+                  <div class="card h-100 toc-card chapter">
+                    <img class="chapter-image card-img-top" src="assets/images/chapter4_head.png" alt="Team analyzing reports and business strategy charts">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fa-solid fa-search"></i> <a href="chapter_4.html" style="color:inherit; text-decoration:underline;">Chapter 4: Analyze</a></h5>
+                      <p class="card-text">Explore root cause analysis: Find out why problems exist, not just where. Tools like cause-and-effect diagrams and Pareto charts come to life here.</p>
+                      <p>Identify the actual sources of inefficiency and variation, paving the way for meaningful solutions.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--CH5-->
+              <div class="col">
+                <section id="chapter5">
+                  <div class="card h-100 toc-card chapter">
+                    <img class="chapter-image card-img-top" src="assets/images/chapter5_head.png" alt="Team brainstorming in a modern office with sticky notes">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fa-solid fa-lightbulb"></i> <a href="chapter_5.html" style="color:inherit; text-decoration:underline;">Chapter 5: Improve</a></h5>
+                      <p class="card-text">Try, test, and refine practical changes. This is where teams brainstorm solutions, run pilots, and remove sources of waste, both big and small.</p>
+                      <p>Celebrate breakthrough improvements and lock in the gains through smart action planning.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--CH6-->
+              <div class="col">
+                <section id="chapter6">
+                  <div class="card h-100 toc-card chapter">
+                    <img class="chapter-image card-img-top" src="assets/images/chapter6_head.png" alt="Quality control: professional reviewing results in an office">
+                    <div class="card-body">
+                      <h5 class="card-title"><i class="fa-solid fa-check-circle"></i> <a href="chapter_6.html" style="color:inherit; text-decoration:underline;">Chapter 6: Control</a></h5>
+                      <p class="card-text">Sustain and scale success. Build control plans and leverage dashboards so your improvements stick long-term, and adapt to future needs.</p>
+                      <p>From audits to insights, take a proactive stance to prevent backsliding and foster a culture of continuous improvement.</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div><!-- end row -->
           </div><!-- end chapters container -->
 
-  
           <section id="about-section" class="container my-5 pt-2">
-
-
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
-
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">
-            <i class="fa-solid fa-circle-info text-primary"></i> About This Course
-          </h4>
-
-          <p class="mb-2"><small>
-            This Lean Six Sigma course provides a clear, practical introduction to process improvement using the DMAIC framework. It is designed to help you identify inefficiencies, reduce waste, and drive measurable results in real-world environments.
-          </p>
-
-          <p class="mb-2">
-            You’ll learn key concepts, tools, and techniques used by professionals to improve quality, streamline operations, and support data-driven decision making.
-          </p>
-
-          <p class="mb-0">
-            This course is currently offered free of charge. All content is created and owned by Eli Vergara, and may not be redistributed without permission.
-          </small></p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        <i class="fa-solid fa-circle-info text-primary"></i> About This Course
+                      </h4>
+                      <p class="mb-2"><small>
+                        This Lean Six Sigma course provides a clear, practical introduction to process improvement using the DMAIC framework. It is designed to help you identify inefficiencies, reduce waste, and drive measurable results in real-world environments.
+                      </p>
+                      <p class="mb-2">
+                        You’ll learn key concepts, tools, and techniques used by professionals to improve quality, streamline operations, and support data-driven decision making.
+                      </p>
+                      <p class="mb-0">
+                        This course is currently offered free of charge. All content is created and owned by Eli Vergara, and may not be redistributed without permission.
+                      </small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </main>
       </div>
     </div>
-<footer class="text-center text-muted mt-1 mb-3 ">
-<a class="nav-link"
-   href="https://www.elivergara.com"
-   target="_blank"
-   rel="noopener noreferrer">
-  <strong><i class="fa-solid fa-graduation-cap"></i> © 2026 — elivergara.com</strong>
-</a>  
-</footer> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="text-center text-muted mt-1 mb-3 ">
+      <a class="nav-link" href="https://www.elivergara.com" target="_blank" rel="noopener noreferrer">
+        <strong><i class="fa-solid fa-graduation-cap"></i> © 2026 — elivergara.com</strong>
+      </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
